@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 65" width="120" height="65" role="img" aria-label="Satellite Inference mark"><title>Satellite Inference mark</title><defs><linearGradient id="mk-dark-band" x1="4.0" x2="116.0" y1="0" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFBD4A" stop-opacity="0"/><stop offset=".5" stop-color="#FFBD4A"/><stop offset="1" stop-color="#FFBD4A" stop-opacity="0"/></linearGradient></defs>
+<path d="M3.00 61.00 A99.25 99.25 0 0 1 117.00 61.00 Z" fill="#174B78"/>
+<path d="M14.59 54.00 A99.25 99.25 0 0 1 105.41 54.00" fill="none" stroke="url(#mk-dark-band)" stroke-width="3.6" stroke-linecap="round"/>
+<rect x="45.00" y="4.00" width="30" height="30" rx="4.8" fill="#FFBD4A"/></svg>

@@ -1,0 +1,21 @@
+{
+  "assetId": "nasa-iss070-e-1178",
+  "classification": "REAL_ASTRONAUT_PHOTOGRAPH",
+  "photographId": "ISS070-E-1178",
+  "acquiredOn": "2023-09-29",
+  "source": "NASA Earth Observatory / ISS Expedition 70",
+  "sourcePage": "https://science.nasa.gov/earth/earth-observatory/sunrise-from-the-station-152259/",
+  "sourceDownload": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/imagerecords/152000/152259/ISS070-E-1178z_lrg.JPG?crop=faces%2Cfocalpoint&fit=clip&h=3712&w=5568",
+  "mediaUsage": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "sourceSha256": "cb485e4da1d2107681f7cf58357a0432c06fc86bb7779e45770c2a4533e3edfb",
+  "webAssetSha256": "0119bba80fc11ac21d680e5ce143e2876a9840c89fa19feb91c2b04d61ba7a22",
+  "webAsset": "/assets/earth/nasa-iss070-e-1178.webp",
+  "sourceDimensions": [
+    5570,
+    3712
+  ],
+  "modifications": "WebP compression only. Website framing and readability gradients are CSS layers. No spacecraft, hardware or other objects added.",
+  "sourceProcessing": "NASA states the published image was cropped and enhanced for contrast and lens artifacts removed before publication.",
+  "attribution": "Earth sunrise photographed from the ISS, 29 September 2023. NASA Earth Observatory / ISS Expedition 70.",
+  "relationship": "External Earth photograph. Does not depict Satellite Inference hardware, and NASA does not endorse Satellite Inference."
+}

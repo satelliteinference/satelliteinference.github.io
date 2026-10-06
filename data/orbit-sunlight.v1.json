@@ -1,0 +1,43 @@
+{
+  "id": "orbit-sunlight-v1",
+  "asOf": "2026-10-04",
+  "status": "CALCULATED",
+  "metric": "annualSunlitFraction",
+  "definition": "Fraction of a year a satellite spends outside Earth's shadow.",
+  "method": "Satellite Inference orbit model v3.1: J2 sun-synchronous inclination, low-precision solar ephemeris for 2027, beta angle and cylindrical Earth-shadow eclipse fraction, integrated over the year.",
+  "limitations": "Screening model, not mission analysis. Ignores penumbra, atmospheric refraction, attitude and local obstructions. The SI-P1 pathfinder flies in its host's orbit.",
+  "orbits": [
+    {
+      "id": "dawn-dusk-sso-650",
+      "label": "Dawn–dusk, 650 km",
+      "note": "Sun-synchronous; our model orbit for SI Nodes",
+      "annualSunlitFraction": 0.9601,
+      "maxEclipseMinutes": 19.7,
+      "highlight": true
+    },
+    {
+      "id": "incl53-550",
+      "label": "53° inclined, 550 km",
+      "note": "Broadband-constellation style",
+      "annualSunlitFraction": 0.6919,
+      "maxEclipseMinutes": 35.6,
+      "highlight": false
+    },
+    {
+      "id": "iss-420",
+      "label": "51.6° inclined, 420 km",
+      "note": "Space-station orbit",
+      "annualSunlitFraction": 0.6611,
+      "maxEclipseMinutes": 36.0,
+      "highlight": false
+    },
+    {
+      "id": "sso-1030-550",
+      "label": "Mid-morning, 550 km",
+      "note": "Sun-synchronous (10:30); typical Earth observation",
+      "annualSunlitFraction": 0.6379,
+      "maxEclipseMinutes": 35.0,
+      "highlight": false
+    }
+  ]
+}

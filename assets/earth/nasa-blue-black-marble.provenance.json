@@ -1,0 +1,35 @@
+{
+  "assetId": "nasa-blue-black-marble-textures",
+  "classification": "REAL_SATELLITE_IMAGERY_COMPOSITE",
+  "use": "Surface and night-lights textures for the orbit simulator's Earth (/orbit and the home page).",
+  "mediaUsage": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "relationship": "External Earth imagery. Does not depict Satellite Inference hardware, and NASA does not endorse Satellite Inference.",
+  "assets": [
+    {
+      "webAsset": "/textures/earth-day-1024.webp",
+      "textSource": "assets/binary/textures/earth-day-1024.webp.b64.part01 to part04",
+      "collection": "NASA Blue Marble Next Generation, September 2004, with topography and bathymetry",
+      "source": "NASA Earth Observatory",
+      "sourceDownload": "https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73801/world.topo.bathy.200409.3x5400x2700.jpg",
+      "sourceSha256": "4c6723e79dc7c1bdb8c193cdf8f946b10b9407bc9fd1164cdf5e75d0aa79ad3b",
+      "sourceDimensions": [5400, 2700],
+      "webAssetSha256": "a6605367a06a9eba0ee2c0f8f89b4a859e98e21eb6c0443442442ddc289716c8",
+      "webDimensions": [1024, 512],
+      "modifications": "Resized to 1024 x 512 (Lanczos) and WebP compression, quality 74. Equirectangular projection unchanged."
+    },
+    {
+      "webAsset": "/textures/earth-night-1024.webp",
+      "textSource": "assets/binary/textures/earth-night-1024.webp.b64.part01 to part02",
+      "collection": "NASA Black Marble 2016, Earth at Night, 0.1 degree global composite",
+      "source": "NASA Earth Observatory / NASA Goddard Space Flight Center (Suomi NPP VIIRS)",
+      "sourceDownload": "https://eoimages.gsfc.nasa.gov/images/imagerecords/144000/144898/BlackMarble_2016_01deg.jpg",
+      "sourceSha256": "d87de751a264e4f8ff69c68de5dab9606daee87a6f15ae743c93200743bd7ec1",
+      "sourceDimensions": [3600, 1800],
+      "webAssetSha256": "1d5ef4b0468eb29fb4481aa5b8396a51b19f2018f9f04af0abe7dd2f5bf3631d",
+      "webDimensions": [1024, 512],
+      "modifications": "Resized to 1024 x 512 (Lanczos), converted to grayscale and WebP compression, quality 70. The simulator keeps only the brightest lights and tints them."
+    }
+  ],
+  "rendering": "The simulator lights the surface with the modeled Sun direction and adds an atmospheric rim. Clouds and seasonal snow are not modeled.",
+  "attribution": "Earth imagery: NASA Blue Marble Next Generation and NASA Black Marble 2016, NASA Earth Observatory."
+}

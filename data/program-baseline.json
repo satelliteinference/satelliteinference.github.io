@@ -1,0 +1,75 @@
+{
+  "version": "3.1-r2",
+  "asOf": "2026-10-04",
+  "status": "DEVELOPMENT_PLAN",
+  "source": "Public subset of SI_Facts_v3.1.json, with review corrections. Estimates and targets, not completed milestones or supplier quotations. Contains no financing or offering terms.",
+  "product": "Spacecraft inference software and Thor-class hosted pathfinder, followed by separately financed solar compute nodes",
+  "company": {
+    "publicName": "Satellite Inference",
+    "operatingEntity": "RFID Inc.",
+    "dedicatedCompany": "PLANNED",
+    "founder": "Bekzad Dzhanpolatov",
+    "technicalCofounder": "IN_ACTIVE_SEARCH",
+    "contact": "bekzad@satelliteinference.com"
+  },
+  "firstMission": {
+    "name": "SI-P1 Pathfinder",
+    "hardwareReference": "NVIDIA Jetson T5000 (Thor)",
+    "fallback": "Jetson AGX Orin Industrial",
+    "liteOption": "Jetson Orin NX or Jetson T4000, subject to workload and host feasibility",
+    "qualificationStatus": "PLANNED_TESTS_NOT_COMPLETED",
+    "launchTarget": "H1 2028",
+    "launchDate": "UNCONTRACTED_HOST_DEPENDENT",
+    "flightDeploymentInBasePlan": false
+  },
+  "orbit0": {
+    "description": "Proposed software experiment using an existing orbital GPU",
+    "targetMonthsAfterStart": "4-6",
+    "status": "TARGET_HOST_ACCESS_NOT_CONTRACTED"
+  },
+  "plan": {
+    "basePlanMonths": 13,
+    "basePlanScope": "Team, software, conditional Orbit-0 experiment, pathfinder build and qualification preparation, host reservation deposit and company costs",
+    "flightFunding": "SEPARATE_NOT_COMMITTED",
+    "baseCustomerReceipts": 0
+  },
+  "nodeOrbit": {
+    "description": "Dawn-dusk sun-synchronous orbit",
+    "altitudeKm": [
+      600,
+      650
+    ],
+    "annualSunlitFraction": 0.96,
+    "status": "SELECTED_MODEL_ASSUMPTION_NOT_GUARANTEED",
+    "seasonalEclipsesRemain": true,
+    "pathfinderOrbit": "HOST_DEPENDENT"
+  },
+  "futureArchitectures": {
+    "status": "CONDITIONAL_SEPARATE_ENGINEERING_AND_FINANCING",
+    "nodeComputeKw": [
+      10,
+      20
+    ],
+    "nodeTarget": "2029-2030",
+    "firstMwClusterTarget": "2031-2032",
+    "longTermAmbition": "100 MW-class by 2035",
+    "conditions": [
+      "technical evidence",
+      "customer demand",
+      "launch access",
+      "spacecraft economics",
+      "new financing at every stage"
+    ]
+  },
+  "publications": {
+    "publicDocuments": [],
+    "detailedMaterials": "SHARED_DIRECTLY",
+    "whitepaper": "NOT_PUBLIC"
+  },
+  "claimedRelationships": {
+    "signedCustomerContracts": false,
+    "signedDesignPartnerLois": false,
+    "contractedHost": false,
+    "namedThirdPartyPartners": []
+  }
+}
