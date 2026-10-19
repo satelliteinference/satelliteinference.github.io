@@ -1,6 +1,6 @@
 {
-  "version": "3.1-r2",
-  "asOf": "2026-10-04",
+  "version": "3.1-r3",
+  "asOf": "2026-10-19",
   "status": "DEVELOPMENT_PLAN",
   "source": "Public subset of SI_Facts_v3.1.json, with review corrections. Estimates and targets, not completed milestones or supplier quotations. Contains no financing or offering terms.",
   "product": "Spacecraft inference software and Thor-class hosted pathfinder, followed by separately financed solar compute nodes",
@@ -46,13 +46,24 @@
   },
   "futureArchitectures": {
     "status": "CONDITIONAL_SEPARATE_ENGINEERING_AND_FINANCING",
-    "nodeComputeKw": [
-      10,
-      20
-    ],
-    "nodeTarget": "2029-2030",
-    "firstMwClusterTarget": "2031-2032",
-    "longTermAmbition": "100 MW-class by 2035",
+    "module1": {
+      "description": "First 20 kW compute module, ideally hosted on a partner's high-power satellite",
+      "computeKw": 20,
+      "target": "mid-2028"
+    },
+    "node1": {
+      "description": "First own satellite, built from five 20 kW compute modules",
+      "computeKw": 100,
+      "computeModules": 5,
+      "target": "2029-2030"
+    },
+    "firstMwCluster": {
+      "nodes": 12,
+      "computingNodes": 10,
+      "spareNodes": 2,
+      "target": "2031-2032"
+    },
+    "longTermAmbition": "100 MW-class by 2035, built only when launch and satellite costs cross our thresholds",
     "conditions": [
       "technical evidence",
       "customer demand",
