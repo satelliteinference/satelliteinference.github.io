@@ -1,8 +1,8 @@
 # Public program and evidence
 
-Updated 4 October 2026 for v3.1-r1.
+Updated 10 November 2026 for v5.1-r1.
 
-The current program combines SI Runtime, Orbit-0 on an existing orbital GPU, and a Thor-class hosted pathfinder. Development and test milestones remain targets. The base plan covers 13 months of engineering and qualification preparation; the SI-P1 flight needs separate funding.
+The current program combines SI Runtime and SI-P1, the first flight: a ready-made, space-rated NVIDIA Jetson AGX Orin flight computer hosted on a partner spacecraft, targeted for late 2027. Development and test milestones remain targets. The base plan covers 18 months, the flight included; no hosting agreement or purchase order is signed.
 
 The [current public baseline](/data/program-baseline.json) records the product, plan boundary and conditional roadmap. The selected future node model estimates approximately 96% annual sunlight in a dawn–dusk orbit, with seasonal eclipses remaining. The pathfinder follows its host's orbit.
 

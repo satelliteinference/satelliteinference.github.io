@@ -1,36 +1,33 @@
 {
-  "version": "3.1-r3",
-  "asOf": "2026-10-19",
+  "version": "5.1-r1",
+  "asOf": "2026-11-10",
   "status": "DEVELOPMENT_PLAN",
-  "source": "Public subset of SI_Facts_v3.1.json, with review corrections. Estimates and targets, not completed milestones or supplier quotations. Contains no financing or offering terms.",
-  "product": "Spacecraft inference software and Thor-class hosted pathfinder, followed by separately financed solar compute nodes",
+  "source": "Public subset of the programme facts v5.1 (November 2026), with review corrections. Estimates and targets, not completed milestones or supplier quotations. Contains no financing or offering terms.",
+  "product": "Spacecraft inference software and GPU compute in orbit: a ready-made space-rated flight computer hosted on a partner spacecraft first, followed by separately financed solar compute nodes",
   "company": {
     "publicName": "Satellite Inference",
-    "operatingEntity": "RFID Inc.",
-    "dedicatedCompany": "PLANNED",
+    "operatingEntity": "Satellite Inference, Inc.",
+    "dedicatedCompany": "INCORPORATED_2026-11",
     "founder": "Bekzad Dzhanpolatov",
     "technicalCofounder": "IN_ACTIVE_SEARCH",
     "contact": "bekzad@satelliteinference.com"
   },
   "firstMission": {
-    "name": "SI-P1 Pathfinder",
-    "hardwareReference": "NVIDIA Jetson T5000 (Thor)",
-    "fallback": "Jetson AGX Orin Industrial",
-    "liteOption": "Jetson Orin NX or Jetson T4000, subject to workload and host feasibility",
-    "qualificationStatus": "PLANNED_TESTS_NOT_COMPLETED",
-    "launchTarget": "H1 2028",
+    "name": "SI-P1 first flight",
+    "flightComputer": "Space-rated NVIDIA Jetson AGX Orin unit, bought ready-made",
+    "flightComputerStatus": "NOT_ORDERED_VENDOR_NOT_NAMED",
+    "carrier": "Hosted payload on a partner spacecraft",
+    "hostStatus": "NO_AGREEMENT_SIGNED_HOST_NOT_NAMED",
+    "qualificationStatus": "VENDOR_RATED_UNIT_SI_TESTS_PLANNED",
+    "launchTarget": "Late 2027",
     "launchDate": "UNCONTRACTED_HOST_DEPENDENT",
-    "flightDeploymentInBasePlan": false
-  },
-  "orbit0": {
-    "description": "Proposed software experiment using an existing orbital GPU",
-    "targetMonthsAfterStart": "4-6",
-    "status": "TARGET_HOST_ACCESS_NOT_CONTRACTED"
+    "flightDeploymentInBasePlan": true,
+    "fallback": "Own Thor-class payload for a 2028 flight if no 2027 slot is contracted"
   },
   "plan": {
-    "basePlanMonths": 13,
-    "basePlanScope": "Team, software, conditional Orbit-0 experiment, pathfinder build and qualification preparation, host reservation deposit and company costs",
-    "flightFunding": "SEPARATE_NOT_COMMITTED",
+    "basePlanMonths": 18,
+    "basePlanScope": "Team, software, bench tests on the engineering unit, the flight computer, hosting and launch, operations in orbit and company costs",
+    "flightFunding": "IN_BASE_PLAN_NOT_COMMITTED",
     "baseCustomerReceipts": 0
   },
   "nodeOrbit": {
@@ -63,7 +60,7 @@
       "spareNodes": 2,
       "target": "2031-2032"
     },
-    "longTermAmbition": "100 MW-class by 2035, built only when launch and satellite costs cross our thresholds",
+    "longTermAmbition": "1 GW by 2035, built in stages only when launch and satellite costs cross our thresholds",
     "conditions": [
       "technical evidence",
       "customer demand",
