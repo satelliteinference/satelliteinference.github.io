@@ -1,10 +1,10 @@
 # Public program and evidence
 
-Updated 10 November 2026 for v5.1-r1.
+Updated 12 November 2026 for v7.0.
 
-The current program combines SI Runtime and SI-P1, the first flight: a ready-made, space-rated NVIDIA Jetson AGX Orin flight computer hosted on a partner spacecraft, targeted for late 2027. Development and test milestones remain targets. The base plan covers 18 months, the flight included; no hosting agreement or purchase order is signed.
+The current program combines SI Runtime and the first flight: a ready-made, space-rated NVIDIA Jetson AGX Orin flight computer hosted on a partner spacecraft, targeted for late 2027. SI-P1, a payload of our own built around an NVIDIA Jetson Thor module, follows as the next computer we own. Development and test milestones remain targets. The base plan covers 18 months, the flight included; the order for the flight unit and the hosting agreement are its first milestones.
 
-The [current public baseline](/data/program-baseline.json) records the product, plan boundary and conditional roadmap. The selected future node model estimates approximately 96% annual sunlight in a dawn–dusk orbit, with seasonal eclipses remaining. The pathfinder follows its host's orbit.
+The [current public baseline](/data/program-baseline.json) records the product, plan boundary and conditional roadmap. The selected future node model estimates approximately 96% annual sunlight in a dawn–dusk orbit, with seasonal eclipses remaining. The first flight follows its host's orbit.
 
 The [publication manifest](/documents/manifest.json) lists public PDFs with their page counts and exact SHA-256 fingerprints; none is published at present. Company materials are shared directly. The whitepaper, detailed new engineering model, runtime mechanisms and private company or IP materials are not published on this website.
 

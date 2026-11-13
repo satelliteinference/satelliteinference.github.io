@@ -4,8 +4,8 @@
   "status": "CALCULATED",
   "metric": "annualSunlitFraction",
   "definition": "Fraction of a year a satellite spends outside Earth's shadow.",
-  "method": "Satellite Inference orbit model v3.1: J2 sun-synchronous inclination, low-precision solar ephemeris for 2027, beta angle and cylindrical Earth-shadow eclipse fraction, integrated over the year.",
-  "limitations": "Screening model, not mission analysis. Ignores penumbra, atmospheric refraction, attitude and local obstructions. The SI-P1 pathfinder flies in its host's orbit.",
+  "method": "Satellite Inference orbit model: J2 sun-synchronous inclination, low-precision solar ephemeris for 2027, beta angle and cylindrical Earth-shadow eclipse fraction, integrated over the year.",
+  "limitations": "Screening model, not mission analysis. Ignores penumbra, atmospheric refraction, attitude and local obstructions. The first flight flies in its host's orbit.",
   "orbits": [
     {
       "id": "dawn-dusk-sso-650",

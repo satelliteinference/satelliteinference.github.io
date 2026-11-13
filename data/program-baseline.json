@@ -1,8 +1,8 @@
 {
-  "version": "5.1-r1",
-  "asOf": "2026-11-10",
+  "version": "7.0",
+  "asOf": "2026-11-12",
   "status": "DEVELOPMENT_PLAN",
-  "source": "Public subset of the programme facts v5.1 (November 2026), with review corrections. Estimates and targets, not completed milestones or supplier quotations. Contains no financing or offering terms.",
+  "source": "Public subset of the programme facts v7.0 (12 November 2026), with review corrections. Estimates and targets, not completed milestones or supplier quotations. Contains no financing or offering terms.",
   "product": "Spacecraft inference software and GPU compute in orbit: a ready-made space-rated flight computer hosted on a partner spacecraft first, followed by separately financed solar compute nodes",
   "company": {
     "publicName": "Satellite Inference",
@@ -13,22 +13,28 @@
     "contact": "bekzad@satelliteinference.com"
   },
   "firstMission": {
-    "name": "SI-P1 first flight",
+    "name": "First flight",
     "flightComputer": "Space-rated NVIDIA Jetson AGX Orin unit, bought ready-made",
-    "flightComputerStatus": "NOT_ORDERED_VENDOR_NOT_NAMED",
+    "flightComputerStatus": "ORDER_IS_A_PLAN_MILESTONE_VENDOR_NOT_NAMED",
     "carrier": "Hosted payload on a partner spacecraft",
-    "hostStatus": "NO_AGREEMENT_SIGNED_HOST_NOT_NAMED",
+    "hostStatus": "HOSTING_AGREEMENT_IS_A_PLAN_MILESTONE_HOST_NOT_NAMED",
     "qualificationStatus": "VENDOR_RATED_UNIT_SI_TESTS_PLANNED",
     "launchTarget": "Late 2027",
-    "launchDate": "UNCONTRACTED_HOST_DEPENDENT",
+    "launchDate": "HOST_MANIFEST_DEPENDENT",
     "flightDeploymentInBasePlan": true,
-    "fallback": "Own Thor-class payload for a 2028 flight if no 2027 slot is contracted"
+    "fallback": "SI-P1 flies first, in 2028, if no 2027 slot is contracted"
+  },
+  "nextPayload": {
+    "name": "SI-P1",
+    "description": "Hosted payload of our own, built around an NVIDIA Jetson Thor module: the next computer we own",
+    "target": "2028",
+    "status": "DESIGNED_SEPARATE_FINANCING"
   },
   "plan": {
     "basePlanMonths": 18,
     "basePlanScope": "Team, software, bench tests on the engineering unit, the flight computer, hosting and launch, operations in orbit and company costs",
-    "flightFunding": "IN_BASE_PLAN_NOT_COMMITTED",
-    "baseCustomerReceipts": 0
+    "flightFunding": "IN_BASE_PLAN",
+    "customerAgreements": "FIRST_FLIGHT_COMPUTE_TIME_MONTHS_3_TO_10"
   },
   "nodeOrbit": {
     "description": "Dawn-dusk sun-synchronous orbit",
@@ -39,14 +45,14 @@
     "annualSunlitFraction": 0.96,
     "status": "SELECTED_MODEL_ASSUMPTION_NOT_GUARANTEED",
     "seasonalEclipsesRemain": true,
-    "pathfinderOrbit": "HOST_DEPENDENT"
+    "firstFlightOrbit": "HOST_DEPENDENT"
   },
   "futureArchitectures": {
     "status": "CONDITIONAL_SEPARATE_ENGINEERING_AND_FINANCING",
     "module1": {
       "description": "First 20 kW compute module, ideally hosted on a partner's high-power satellite",
       "computeKw": 20,
-      "target": "mid-2028"
+      "target": "late 2028"
     },
     "node1": {
       "description": "First own satellite, built from five 20 kW compute modules",
