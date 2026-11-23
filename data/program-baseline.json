@@ -1,8 +1,8 @@
 {
-  "version": "7.0",
-  "asOf": "2026-11-12",
+  "version": "8.0",
+  "asOf": "2026-11-23",
   "status": "DEVELOPMENT_PLAN",
-  "source": "Public subset of the programme facts v7.0 (12 November 2026), with review corrections. Estimates and targets, not completed milestones or supplier quotations. Contains no financing or offering terms.",
+  "source": "Public subset of the programme facts v8.0 (23 November 2026), with review corrections. Estimates and targets, not completed milestones or supplier quotations. Contains no financing or offering terms.",
   "product": "Spacecraft inference software and GPU compute in orbit: a ready-made space-rated flight computer hosted on a partner spacecraft first, followed by separately financed solar compute nodes",
   "company": {
     "publicName": "Satellite Inference",
@@ -64,7 +64,7 @@
       "nodes": 12,
       "computingNodes": 10,
       "spareNodes": 2,
-      "target": "2031-2032"
+      "target": "2031"
     },
     "longTermAmbition": "1 GW by 2035, built in stages only when launch and satellite costs cross our thresholds",
     "conditions": [
