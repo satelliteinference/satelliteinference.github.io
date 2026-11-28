@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://satelliteinference.com/data/reservation-request.schema.json",
+  "title": "Capacity reservation request",
+  "description": "What a company sends to Satellite Inference to ask for a Capacity Reservation Memorandum. A request is not an order and does not bind either side.",
+  "type": "object",
+  "required": ["offerVersion", "partner", "signatory", "territory", "intendedUse", "reservation"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "offerVersion": { "type": "string", "description": "Version of the capacity plan the request refers to.", "examples": ["8.0"] },
+    "partner": {
+      "type": "object",
+      "required": ["legalName", "countryOfRegistration", "website"],
+      "properties": {
+        "legalName": { "type": "string", "minLength": 1, "maxLength": 160 },
+        "legalForm": { "type": "string", "maxLength": 60 },
+        "countryOfRegistration": { "type": "string", "minLength": 1, "maxLength": 60 },
+        "registrationNumber": { "type": "string", "maxLength": 60 },
+        "registeredAddress": { "type": "string", "maxLength": 200 },
+        "website": { "type": "string", "minLength": 1, "maxLength": 120 }
+      }
+    },
+    "signatory": {
+      "type": "object",
+      "description": "A person with authority to sign for the company.",
+      "required": ["name", "title", "workEmail"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "title": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "workEmail": { "type": "string", "format": "email", "maxLength": 160, "description": "An address on the company's own domain." }
+      }
+    },
+    "coordinator": { "type": "string", "maxLength": 200, "description": "Name and email of the day-to-day contact, if different from the signatory." },
+    "territory": { "type": "string", "minLength": 1, "maxLength": 240, "description": "Countries where the capacity will be used." },
+    "intendedUse": { "enum": ["Own workloads", "Resale to own customers", "Both"] },
+    "nameAndLogoInPublic": { "type": "boolean", "description": "True if Satellite Inference may name the company in public as a holder of a reservation, with its logo." },
+    "reservation": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["tranche", "requestedKw"],
+        "properties": {
+          "tranche": { "enum": ["2031", "2032", "2033", "2034", "2035", "later"] },
+          "requestedKw": { "type": "number", "minimum": 0, "description": "Kilowatts of IT load requested in the tranche. There is no upper limit." }
+        }
+      }
+    },
+    "totals": {
+      "type": "object",
+      "description": "Computed by the reservation page. Informative only.",
+      "properties": {
+        "requestedKw": { "type": "number" },
+        "withinPlanKw": { "type": "number" },
+        "beyondPlanKw": { "type": "number" },
+        "indicativeYearlyFeeUsd": { "type": "number" }
+      }
+    }
+  }
+}

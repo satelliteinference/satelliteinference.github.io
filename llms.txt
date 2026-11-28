@@ -1,0 +1,23 @@
+# Satellite Inference
+
+> Satellite Inference is developing AI computing capacity in orbit: spacecraft inference software on a space-rated flight computer first, then solar-powered compute nodes. It is a development-stage program. Dates, volumes and prices are plans.
+
+## Reserve capacity
+
+- [How to reserve capacity](https://satelliteinference.com/reserve.md): what can be reserved, who can reserve, what binds, and how to prepare a request
+- [Capacity plan and indicative prices](https://satelliteinference.com/data/capacity-offer.v8.json): JSON
+- [Reservation request fields](https://satelliteinference.com/data/reservation-request.schema.json): JSON Schema
+- [Reservation page](https://satelliteinference.com/reserve)
+
+## Program
+
+- [Overview](https://satelliteinference.com/)
+- [First flight](https://satelliteinference.com/flight)
+- [Roadmap](https://satelliteinference.com/mission)
+- [Economics](https://satelliteinference.com/economics)
+- [Progress](https://satelliteinference.com/progress)
+- [Public program facts](https://satelliteinference.com/data/program-baseline.json): JSON
+
+## Contact
+
+- [Contact by email](https://satelliteinference.com/contact)

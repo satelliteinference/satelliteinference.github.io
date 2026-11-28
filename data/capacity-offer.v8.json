@@ -1,0 +1,32 @@
+{
+  "version": "8.0",
+  "asOf": "2026-11-28",
+  "status": "WORKING_ASSUMPTION",
+  "source": "Public subset of the Satellite Inference capacity plan, version 8.0. Planned volumes and indicative prices: not quotations and not completed milestones.",
+  "replacementEvidence": "The price of a tranche is set when its chips are chosen and is written into a capacity agreement.",
+  "provider": "Satellite Inference, Inc.",
+  "unit": "kW of IT load",
+  "currency": "USD",
+  "termYearsPerTranche": 5,
+  "plannedTotalKw": 1000000,
+  "tranches": [
+    { "id": "2031", "startOfDelivery": "2031", "plannedKw": 1000, "indicativePriceUsdPerKwYear": 50000 },
+    { "id": "2032", "startOfDelivery": "2032", "plannedKw": 9000, "indicativePriceUsdPerKwYear": 40000 },
+    { "id": "2033", "startOfDelivery": "2033", "plannedKw": 40000, "indicativePriceUsdPerKwYear": 35000 },
+    { "id": "2034", "startOfDelivery": "2034", "plannedKw": 200000, "indicativePriceUsdPerKwYear": 21250 },
+    { "id": "2035", "startOfDelivery": "2035", "plannedKw": 750000, "indicativePriceUsdPerKwYear": 21250 },
+    { "id": "later", "startOfDelivery": "after 2035", "plannedKw": 0, "indicativePriceUsdPerKwYear": null }
+  ],
+  "reservation": {
+    "depositUsd": 0,
+    "upperLimitKw": null,
+    "queue": "Ordered by the date the partner signs.",
+    "firstOfferDays": 60,
+    "binding": ["priority", "confidentiality", "compliance with export and sanctions law", "governing law"],
+    "notBinding": ["volumes", "prices", "dates"],
+    "withdrawal": "At any time, by email."
+  },
+  "page": "https://satelliteinference.com/reserve",
+  "guide": "https://satelliteinference.com/reserve.md",
+  "requestSchema": "https://satelliteinference.com/data/reservation-request.schema.json"
+}
